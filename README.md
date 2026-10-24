@@ -53,4 +53,6 @@ Use the Windows portable app, Android APK or installable iPhone web app. In Safa
 
 ## Version releases
 
+Latest build: **0.2.3**.
+
 [Downloads & release notes](https://github.com/hsob2nd/999-wrld-releases/releases) · [Open the web app](https://hsob2nd.github.io/999-wrld-releases/) · [Report an issue](https://github.com/hsob2nd/999-wrld-releases/issues/new/choose)
