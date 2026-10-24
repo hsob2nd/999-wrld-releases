@@ -1,4 +1,4 @@
-const CACHE='999-wrld-shell-1792847875942',BASE=new URL(self.registration.scope).pathname;
+const CACHE='999-wrld-shell-1792853639831',BASE=new URL(self.registration.scope).pathname;
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(c=>fetch(BASE+'shell-assets.json').then(r=>r.json()).then(files=>c.addAll([BASE,...files]))));self.skipWaiting()});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('999-wrld-shell-')&&k!==CACHE).map(k=>caches.delete(k)))));self.clients.claim()});
 self.addEventListener('fetch',event=>{const u=new URL(event.request.url);if(u.origin!==location.origin||u.pathname.startsWith('/api/')||event.request.method!=='GET')return;if(event.request.mode==='navigate'){event.respondWith(fetch(event.request).then(r=>{if(r.ok)caches.open(CACHE).then(c=>c.put(BASE,r.clone()));return r}).catch(()=>caches.match(BASE)));return}event.respondWith(caches.match(event.request).then(hit=>hit||fetch(event.request).then(r=>{if(r.ok)caches.open(CACHE).then(c=>c.put(event.request,r.clone()));return r}))) });
