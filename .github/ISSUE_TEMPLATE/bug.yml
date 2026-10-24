@@ -1,0 +1,23 @@
+name: Bug report
+description: Something is not working in the player.
+title: "[Bug] "
+body:
+  - type: input
+    id: version
+    attributes:
+      label: App version and platform
+      placeholder: 0.2.0 · Windows / Android / iOS simulator
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: What did you do, what happened, and what should have happened?
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Error or screenshot (optional)
+      description: Redact private information. Do not upload songs, tokens, listening history or UserData.

@@ -1,0 +1,11 @@
+name: Feature request
+description: Suggest an improvement to 999 WRLD.
+title: "[Feature] "
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like the player to do?
+      description: Describe the use case and your platform. Keep personal information out of public reports.
+    validations:
+      required: true
