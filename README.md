@@ -24,11 +24,13 @@
 
 ### A music collection that feels like yours
 
-Import local songs, browse automatically grouped albums, search titles and alternate names, and keep an editable queue. Love tracks from your library, catalogue or radio; the Loved songs playlist collects them. Create ordinary playlists yourself or smart playlists that follow rules across your library. Available catalogue tracks and playlists can be saved to this device in their original supplied quality.
+Import local songs, browse automatically grouped albums, search titles and alternate names, and keep an editable queue. Album search stays in Albums, with its own search text. Session-folder numbering, spacing and capitalisation do not split the same collection; album artists and different editions remain separate. Love tracks from your library, catalogue or radio; the Loved songs playlist collects them. Create ordinary playlists yourself or smart playlists that follow rules across your library. Available catalogue tracks and playlists can be saved to this device in their original supplied quality.
 
 ### Balanced playback and a flexible equaliser
 
 The 31-band equaliser includes preamp, editable frequency bands, presets and a response graph. The Juice WRLD inspired starter preset can be adjusted or replaced. Windows analyses whole songs for loudness and true peak, then applies playback gain so quieter and louder recordings sit closer together. Android device scans analyse audio in small native chunks; imported files and browser apps use a bounded, lower-memory loudness estimate. These paths report sample peak. ReplayGain track and album tags are supported, with album peak handling, a playback preamp, unanalysed-song gain and clipping prevention. Analysis results are reused, and processing intensity can be adjusted. Local files also have independent pitch controls (±12 semitones), playback speed (0.5–1.5×), reverb, reset and a slowed-and-reverb preset. These playback effects do not rewrite originals and are bypassed for API streams.
+
+On iPhone web apps, recommended background mode uses the system player and bypasses EQ, ReplayGain, pitch and reverb while preserving presets. An optional processing mode applies them, with foreground playback recommended. iPhone web playback reuses one player, so crossfade is unavailable. Playback speed, queue, lyrics, favourites and media controls remain available. Settings includes iOS 16.7 Home Screen setup and interruption troubleshooting. Physical-device lock-screen behaviour still needs verification.
 
 ### Your own radio host
 
@@ -36,7 +38,7 @@ Local radio builds a queue from your music or playlists and works independently 
 
 ### The catalogue and different song versions
 
-Search the Juice WRLD API catalogue, explore eras and alternate titles, compare linked versions, and listen to the provider's live 999 FM station. Catalogue checks identify newly added entries after an initial baseline. Version comparisons combine documented metadata with available audio measurements, including duration and loudness. Smart catalogue radio compares linked versions, explains its pick and keeps a real queue. On Android, catalogue radio currently uses lightweight direct streaming: automatic version lookup, pre-play analysis and background analysis are paused following device crashes. Covers, favourites, skips and the queue remain available; version comparison can still be opened manually. Other platforms retain optional automatic audio comparison, caching results and preparing the next song in advance. Checks cover waveform clipping, silence, channel balance, mono cancellation and mastering loudness. Windows and supported browser jobs also provide a sampled spectral view. Manual Android analysis reads a temporary download in small chunks, with a 60 MB original-file limit and no spectral or true-peak claim. Browser jobs have stricter memory limits; oversized files retain catalogue-based selection and are marked unmeasured. Audio checks need extra downloads and battery and describe measurable differences rather than proving artistic superiority. Higher bitrate alone is not treated as proof that a version sounds better. Streaming quality and data-saving settings depend on the files supplied by the provider.
+Search the Juice WRLD API catalogue, explore eras and alternate titles, compare linked versions, and listen to the provider's live 999 FM station. Catalogue checks identify newly added entries after an initial baseline. Version comparisons combine documented metadata with available audio measurements, including duration and loudness. Smart catalogue radio compares linked versions, explains its pick and keeps a real queue. On Android and in recommended iPhone background mode, catalogue radio uses lightweight direct streaming: automatic version lookup, pre-play analysis and background analysis are paused for reliable playback. Covers, favourites, skips and the queue remain available; version comparison can still be opened manually. Other platforms retain optional automatic audio comparison, caching results and preparing the next song in advance. Checks cover waveform clipping, silence, channel balance, mono cancellation and mastering loudness. Windows and supported browser jobs also provide a sampled spectral view. Manual Android analysis reads a temporary download in small chunks, with a 60 MB original-file limit and no spectral or true-peak claim. Browser jobs have stricter memory limits; oversized files retain catalogue-based selection and are marked unmeasured. Audio checks need extra downloads and battery and describe measurable differences rather than proving artistic superiority. Higher bitrate alone is not treated as proof that a version sounds better. Streaming quality and data-saving settings depend on the files supplied by the provider.
 
 ### Lyrics, tags and audio tools
 
@@ -54,6 +56,6 @@ Use the Windows portable app, Android APK, installable iPhone web app or Mac web
 
 ## Version releases
 
-Latest build: **0.2.6**.
+Latest build: **0.2.7**.
 
 [Downloads & release notes](https://github.com/hsob2nd/999-wrld-releases/releases) · [Open the web app](https://hsob2nd.github.io/999-wrld-releases/) · [Report an issue](https://github.com/hsob2nd/999-wrld-releases/issues/new/choose)
