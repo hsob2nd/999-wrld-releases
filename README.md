@@ -2,8 +2,8 @@
 
 999 WRLD is a Juice WRLD inspired music player for your computer and phone, built around your own music collection. It brings a rich, customisable look together with balanced playback, an optional AI radio host, and tools to discover, organise and enjoy different versions of your favourite songs.
 
-- **Your music, organised:** Browse local files by song or album, search alternate titles, and edit track details.
-- **Sound your way:** Shape the sound with a 31-band equaliser and keep songs at a consistent perceived volume with loudness analysis.
+- **Your music, organised:** Scan for MP3s on Windows or Android, browse songs and albums, search alternate titles, and edit track details.
+- **Sound your way:** Use a 31-band equaliser, consistent-volume playback, and local-only pitch, reverb and speed controls.
 - **Your own radio station:** Build a local queue with an optional AI DJ, natural male or female voices, and chilled, upbeat or hype delivery.
 - **Talk to the DJ:** Ask for a skip, request a song, change the vibe or get a recommendation by typing or speaking.
 - **Explore the catalogue:** Find Juice WRLD songs, alternate titles and newly added entries, or listen to live 999 FM with a compact artwork queue preview.
@@ -13,8 +13,8 @@
 - **Lyrics and editing:** Follow timed lyrics when available, fix tags, and trim or arrange audio without overwriting your originals.
 - **Your listening story:** See song play counts, monthly recaps and the tracks you keep coming back to.
 - **Make it yours:** Choose colours, backgrounds, fonts and layout preferences to match your style.
-- **Stay current:** See update notifications and find new GitHub releases in Settings.
-- **Take it with you:** Use the Windows app, Android build or installable iPhone web app.
+- **Stay current:** Get update notifications, download updates in Settings, and apply them through your platform’s installer or web-app reload.
+- **Take it with you:** Use Windows, Android, iPhone and Mac web apps, with background playback preferences and media controls.
 
 
 ## Detailed features
@@ -28,7 +28,7 @@ Import local songs, browse automatically grouped albums, search titles and alter
 
 ### Balanced playback and a flexible equaliser
 
-The 31-band equaliser includes preamp, editable frequency bands, presets and a response graph. The Juice WRLD inspired starter preset can be adjusted or replaced. Windows analyses whole songs for loudness and true peak, then applies playback gain so quieter and louder recordings sit closer together. Phone analysis uses a lighter loudness estimate and sample peak. Analysis results are reused, and processing intensity can be adjusted.
+The 31-band equaliser includes preamp, editable frequency bands, presets and a response graph. The Juice WRLD inspired starter preset can be adjusted or replaced. Windows analyses whole songs for loudness and true peak, then applies playback gain so quieter and louder recordings sit closer together. Phone analysis uses a lighter loudness estimate and sample peak. Analysis results are reused, and processing intensity can be adjusted. Local files also have independent pitch controls (±12 semitones), playback speed (0.5–1.5×), reverb, reset and a slowed-and-reverb preset. These playback effects do not rewrite originals and are bypassed for API streams.
 
 ### Your own radio host
 
@@ -36,7 +36,7 @@ Local radio builds a queue from your music or playlists and works independently 
 
 ### The catalogue and different song versions
 
-Search the Juice WRLD API catalogue, explore eras and alternate titles, compare linked versions, and listen to the provider's live 999 FM station. Catalogue checks identify newly added entries after an initial baseline. Version comparisons combine documented metadata with available audio measurements, including duration and loudness. Smart catalogue radio compares linked versions, explains its pick and keeps a real queue. Optional full audio analysis measures each playable version before selection; this needs extra downloads and battery. Higher bitrate alone is not treated as proof that a version sounds better. Streaming quality and data-saving settings depend on the files supplied by the provider.
+Search the Juice WRLD API catalogue, explore eras and alternate titles, compare linked versions, and listen to the provider's live 999 FM station. Catalogue checks identify newly added entries after an initial baseline. Version comparisons combine documented metadata with available audio measurements, including duration and loudness. Smart catalogue radio compares linked versions, explains its pick and keeps a real queue. Audio comparison is enabled by default and measures each playable version before selection, caching results and preparing the next song in advance. Checks cover waveform clipping, silence, channel balance, mono cancellation and mastering loudness, with a sampled spectral view. This needs extra original-file downloads and battery; checks describe measurable differences rather than proving artistic superiority. Higher bitrate alone is not treated as proof that a version sounds better. Streaming quality and data-saving settings depend on the files supplied by the provider.
 
 ### Lyrics, tags and audio tools
 
@@ -48,12 +48,12 @@ Count one listen after 30% of a song has actually played, and see monthly recaps
 
 ### Platforms and updates
 
-Use the Windows portable app, Android APK or installable iPhone web app. In Safari, open the web app and choose Share → Add to Home Screen. GitHub releases provide update notifications inside the app and checks in Settings. Windows updates verify the download and preserve library data in a new installation; phone packages use their platform's installer and the web app refreshes in place. The iOS download is an unsigned simulator build for Xcode, not a signed physical-iPhone IPA. Browser storage limits, supported audio formats, AI performance and background playback vary by device. Libraries and listening history are currently per device, without automatic cloud sync.
+Use the Windows portable app, Android APK, installable iPhone web app or Mac web app. On Mac, Safari → File → Add to Dock gives the same responsive desktop layout as Windows. An optional small universal macOS window supports Apple Silicon and Intel using the system WebKit engine, with multi-file imports, download/save dialogs and persistent on-device storage. It loads the hosted web app and needs an internet connection on first launch; Windows-specific file-tag rewriting and FFmpeg tools are not part of this web version. The downloadable Mac preview is ad-hoc signed and is not Apple notarized; Safari installation is the regular web-app route. In Safari, open the web app and choose Share → Add to Home Screen. GitHub releases provide update notifications inside the app and checks in Settings. Windows updates verify the download and preserve library data in a new installation; phone packages use their platform's installer and the web app refreshes in place. Android release packages use a stable private signing key for future data-preserving updates. Older preview APKs signed with a different debug key require a separate migration; export your data before replacing one. The iOS download is an unsigned simulator build for Xcode, not a signed physical-iPhone IPA. Native mobile projects include audio-session, lock-screen, headset and interruption handling. Background playback and a sleep timer have settings in the app; real-device testing remains necessary. Windows can scan local drives for MP3s and Android scans its indexed music library. iPhone and browsers use multiple-file import because they cannot scan private device storage. Browser storage limits, supported audio formats, AI performance and background playback vary by device. Libraries and listening history are currently per device, without automatic cloud sync.
 
 </details>
 
 ## Version releases
 
-Latest build: **0.2.3**.
+Latest build: **0.2.4**.
 
 [Downloads & release notes](https://github.com/hsob2nd/999-wrld-releases/releases) · [Open the web app](https://hsob2nd.github.io/999-wrld-releases/) · [Report an issue](https://github.com/hsob2nd/999-wrld-releases/issues/new/choose)
