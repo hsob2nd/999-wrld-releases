@@ -13,6 +13,7 @@
 - **Lyrics and editing:** Follow timed lyrics when available, fix tags, and trim or arrange audio without overwriting your originals.
 - **Your listening story:** See song play counts, monthly recaps and the tracks you keep coming back to.
 - **Make it yours:** Choose colours, backgrounds, fonts and layout preferences to match your style.
+- **Stay current:** See update notifications and find new GitHub releases in Settings.
 - **Take it with you:** Use the Windows app, Android build or installable iPhone web app.
 
 
